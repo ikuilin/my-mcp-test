@@ -1,92 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top Cryptocurrencies</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        .crypto-list {
-            list-style: none;
-            padding: 0;
-        }
-        .crypto-item {
-            background-color: #f8f9fa;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-            border-left: 4px solid #2c3e50;
-        }
-        .crypto-name {
-            font-weight: bold;
-            color: #2c3e50;
-        }
-        .market-cap {
-            color: #666;
-            font-size: 0.9em;
-        }
-        #loading {
-            text-align: center;
-            color: #666;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>Top Cryptocurrencies</h1>
-        <p>Cryptocurrency is a digital or virtual form of currency that uses cryptography for security. Unlike traditional currencies, cryptocurrencies are decentralized systems based on blockchain technology. Here are the top 5 cryptocurrencies by market capitalization:</p>
-        <ul class="crypto-list" id="cryptoList">
-            <li class="crypto-item">
-                <span class="crypto-name">Bitcoin (BTC)</span>
-                <p>The first and most well-known cryptocurrency, created in 2009. Bitcoin remains the largest cryptocurrency by market cap.</p>
-                <span class="market-cap">Market Cap: $880.5B</span>
-            </li>
-            <li class="crypto-item">
-                <span class="crypto-name">Ethereum (ETH)</span>
-                <p>A decentralized platform that enables smart contracts and decentralized applications (DApps).</p>
-                <span class="market-cap">Market Cap: $290.8B</span>
-            </li>
-            <li class="crypto-item">
-                <span class="crypto-name">Binance Coin (BNB)</span>
-                <p>The native cryptocurrency of Binance Chain and Binance Smart Chain.</p>
-                <span class="market-cap">Market Cap: $45.2B</span>
-            </li>
-            <li class="crypto-item">
-                <span class="crypto-name">Solana (SOL)</span>
-                <p>A high-performance blockchain platform known for its fast transaction speeds and low fees.</p>
-                <span class="market-cap">Market Cap: $42.1B</span>
-            </li>
-            <li class="crypto-item">
-                <span class="crypto-name">XRP (XRP)</span>
-                <p>A digital payment network and protocol developed by Ripple Labs.</p>
-                <span class="market-cap">Market Cap: $35.6B</span>
-            </li>
-        </ul>
-    </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const items = document.querySelectorAll('.crypto-item');
-            items.forEach((item, index) => {
-                item.style.animation = `fadeIn 0.5s ease-in ${index * 0.2}s forwards`;
-            });
-        });
-    </script>
-</body>
+    <title>Cryptocurrency Information</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
